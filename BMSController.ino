@@ -36,7 +36,7 @@ void updateEncoder() {
     value ++;cntd=0;
   } else if(encoded == 0b1110 || encoded == 0b0111 || encoded == 0b0001 || encoded == 0b1000) {
     value --;cntd=0;
-  }
+  } //from http://nn-hokuson.hatenablog.com/entry/2017/03/26/102145
   if(value>=attack){dir=1;cntd=0;value=0;nk.add(disk[0]);nk.remove(disk[1]);}
   else if(value<=-attack){dir=-1;cntd=0;value=0;nk.add(disk[1]);nk.remove(disk[0]);}
   prev = ab;
