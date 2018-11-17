@@ -27,7 +27,7 @@ void setup() {
 
 void updateEncoder() {
   int a = (PIND & _BV(0))>>0;
-  int b = (PIND & _BV(1))>>1;
+  int b = (PIND & _BV(1))>>1; //from https://www.arduino.cc/en/Hacking/PinMapping32u4
  
   uint8_t ab = (a << 1) | b;
   uint8_t encoded  = (prev << 2) | ab;
